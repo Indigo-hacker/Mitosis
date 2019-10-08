@@ -12,9 +12,9 @@ command -v curl > /dev/null 2>&1 || { echo >&2 "I require curl but it's not inst
 menu() {
 
 printf "\n"
-printf "\e[1;31m\e[0m\e[1;31m=============================================\e[0m \e[1;31m\e[0m\n"
+printf "\e[1;31m\e[0m\e[1;31m---------------------------------------------\e[0m \e[1;31m\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m01\e[0m\e[1;31m]\e[0m\e[1;31m Redes Sociales\e[0m      \e[1;31m[\e[0m\e[1;31m02\e[0m\e[1;31m]\e[0m\e[1;31m Paginas de Wifi\n"
-printf "\e[1;31m\e[0m\e[1;31m=============================================\e[0m \e[1;31m\e[0m\n"
+printf "\e[1;31m\e[0m\e[1;31m---------------------------------------------\e[0m \e[1;31m\e[0m\n"
 
 read -p $'\n\e[1;31m[\e[0m\e[1;31m*\e[0m\e[1;31m] Facebook y Gmail no funcionan correctamente \e[31m\en' option
 
@@ -38,7 +38,7 @@ fi
 menu1() {
 
 printf "\n"
-printf "\e[1;31m\e[0m\e[1;31m=======================================================\e[0m \e[1;93m\e[0m\n"
+printf "\e[1;31m\e[0m\e[1;31m-------------------------------------------------------\e[0m \e[1;93m\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m01\e[0m\e[1;31m]\e[0m\e[1;31m Instagram\e[0m      \e[1;31m[\e[0m\e[1;31m09\e[0m\e[1;31m]\e[0m\e[1;31m Origin\e[0m          \e[1;31m[\e[0m\e[1;31m17\e[0m\e[1;31m]\e[0m\e[1;31m Gitlab\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m02\e[0m\e[1;31m]\e[0m\e[1;31m Facebook\e[0m       \e[1;31m[\e[0m\e[1;31m10\e[0m\e[1;31m]\e[0m\e[1;31m Steam\e[0m           \e[1;31m[\e[0m\e[1;31m18\e[0m\e[1;31m]\e[0m\e[1;31m Pinterest\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m03\e[0m\e[1;31m]\e[0m\e[1;31m Snapchat\e[0m       \e[1;31m[\e[0m\e[1;31m11\e[0m\e[1;31m]\e[0m\e[1;31m Yahoo           \e[0m\e[1;31m[\e[0m\e[1;31m99\e[0m\e[1;31m]\e[0m\e[1;31m Exit\e[0m\n"
@@ -47,7 +47,7 @@ printf "\e[1;31m[\e[0m\e[1;31m05\e[0m\e[1;31m]\e[0m\e[1;31m Github\e[0m         
 printf "\e[1;31m[\e[0m\e[1;31m06\e[0m\e[1;31m]\e[0m\e[1;31m Google\e[0m         \e[1;31m[\e[0m\e[1;31m14\e[0m\e[1;31m]\e[0m\e[1;31m Wordpress\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m07\e[0m\e[1;31m]\e[0m\e[1;31m Spotify\e[0m        \e[1;31m[\e[0m\e[1;31m15\e[0m\e[1;31m]\e[0m\e[1;31m Microsoft\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m08\e[0m\e[1;31m]\e[0m\e[1;31m Netflix\e[0m        \e[1;31m[\e[0m\e[1;31m16\e[0m\e[1;31m]\e[0m\e[1;31m InstaFollowers\e[0m\n"
-printf "\e[1;31m\e[0m\e[1;31m=======================================================\e[0m \e[1;93m\e[0m\n"
+printf "\e[1;31m\e[0m\e[1;31m-------------------------------------------------------\e[0m \e[1;93m\e[0m\n"
 read -p $'\n\e[1;31m[\e[0m\e[1;31m*\e[0m\e[1;31m] Escoje una opción: \e[0m\en' option
 printf "\n"
 
@@ -58,11 +58,11 @@ start1
 elif [[ $option == 2 || $option == 02 ]]; then
      printf "\e[1;31m\e[0m\e[1;31mPuedes escojer entre direrentes paginas de Facebook\e[0m \e[1;93m\e[0m\n"
      printf "\n"
-     printf "\e[1;31m\e[0m\e[1;31m=======================================================\e[0m \e[1;31m\e[0m\n"
+     printf "\e[1;31m\e[0m\e[1;31m------------------------------------------------------\e[0m \e[1;31m\e[0m\n"
      printf "\e[1;31m[\e[0m\e[1;31m01\e[0m\e[1;31m]\e[0m\e[1;31m Facebook_login\e[0m\n"
      printf "\e[1;31m[\e[0m\e[1;31m02\e[0m\e[1;31m]\e[0m\e[1;31m Facebook Hot\e[0m\n"
      printf "\e[1;31m[\e[0m\e[1;31m03\e[0m\e[1;31m]\e[0m\e[1;31m Hacking Publico\e[0m\n"
-     printf "\e[1;32m\e[0m\e[1;31m=======================================================\e[0m \e[1;31m\e[0m\n"
+     printf "\e[1;32m\e[0m\e[1;31m------------------------------------------------------\e[0m \e[1;31m\e[0m\n"
     read -p "escoja una opcion: " opt
        if [[ $opt == 1 ]]; then
              server="facebook"
@@ -151,7 +151,7 @@ fi
 
 menu2() {
 printf "\n"
-printf "\e[1;31m\e[0m\e[1;31m==================================\e[0m \e[1;32m\e[0m\n"
+printf "\e[1;31m\e[0m\e[1;31m----------------------------------\e[0m \e[1;32m\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m01\e[0m\e[1;31m]\e[0m\e[1;31m Claro\e[0m\n
 printf "\e[1;31m[\e[0m\e[1;31m02\e[0m\e[1;31m]\e[0m\e[1;31m DirecTV\e[0m\n        
 printf "\e[1;31m[\e[0m\e[1;31m03\e[0m\e[1;31m]\e[0m\e[1;31m GoogleWlan\e[0m\n"
@@ -159,7 +159,7 @@ printf "\e[1;31m[\e[0m\e[1;31m04\e[0m\e[1;31m]\e[0m\e[1;31m Movistar\e[1;92m\n"
 printf "\e[1;31m[\e[0m\e[1;31m05\e[0m\e[1;31m]\e[0m\e[1;31m Telekom\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m06\e[0m\e[1;31m]\e[0m\e[1;31m Telmex\e[0m\n"
 printf "\e[1;31m[\e[0m\e[1;31m07\e[0m\e[1;31m]\e[0m\e[1;31m TPLink\e[0m\n"
-printf "\e[1;31m\e[0m\e[1;31m==================================\e[0m \e[1;31m\e[0m\n"
+printf "\e[1;31m\e[0m\e[1;31m----------------------------------\e[0m \e[1;31m\e[0m\n"
 read -p $'\n\e[1;31m[\e[0m\e[1;31m*\e[0m\e[1;31m] Escojer una Opcion: \e[0m\en' option
 
 
@@ -238,7 +238,7 @@ printf "    ║╔╗╔╗║─║║─╚╝║║╚╝║║─║║║�
 printf "    ║║║║║║─║║───║║──║║─║║╚══╗║─║║─╚══╗║\n"
 printf "    ║║║║║║╔╣─╗──║║──║╚═╝║║╚═╝║╔╣─╗║╚═╝║\n"
 printf "    ╚╝╚╝╚╝╚══╝──╚╝──╚═══╝╚═══╝╚══╝╚═══╝v1.0\n" 
-printf "     \e[0m\e[1;31  By:Índigo(B) \e[1;31m \n"
+printf "     \e[0m\e[1;31  By:Índigo(B41t1) \e[1;31m \n"
 
                              
 
@@ -474,7 +474,7 @@ fi
 checkfound() {
 
 printf "\n"
-printf "\e[1;31m[\e[0m\e[1;31m*\e[0m\e[1;31m] Esperando IPs y Crendenciales,\e[0m\e[1;31m Presiona Ctrl + C para salir...\e[1;31m\n"
+printf "\e[1;31m[\e[0m\e[1;31m*\e[0m\e[1;31m] Esperando...\e[0m\e[1;31m Presiona Ctrl + C para salir.\e[1;31m\n"
 while [ true ]; do
 
 
@@ -485,7 +485,7 @@ rm -rf sites/$server/ip.txt
 fi
 sleep 0.5
 if [[ -e "sites/$server/usernames.txt" ]]; then
-printf "\n\e[1;31m[\e[0m*\e[1;31m]\e[1;31m\e[1;31m Credenciales Funcionando!\n"
+printf "\n\e[1;31m[\e[0m*\e[1;31m]\e[1;31m\e[1;31m Datos Obtenidos!\n"
 catch_cred
 rm -rf sites/$server/usernames.txt
 fi
